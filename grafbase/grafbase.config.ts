@@ -1,6 +1,6 @@
 import { g, auth, config, connector } from '@grafbase/sdk';
 
-const neon = connector.Postgres('Neon', {
+const neon = connector.Postgres('flexibble_DB', {
   url: g.env('NEON_URL'),
 });
 
