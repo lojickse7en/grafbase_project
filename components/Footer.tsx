@@ -32,7 +32,7 @@ const Footer = () => {
             alt="Flexibble"
           />
           <p className="text-start text-sm font-normal mt-5 max-w-xs">
-            Flexible iis the world's leading community for creatives to share,
+            Flexible is the world's leading community for creatives to share,
             grow and get hired.
           </p>
         </div>

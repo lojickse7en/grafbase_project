@@ -1,4 +1,10 @@
-import { g, auth, config } from '@grafbase/sdk';
+import { g, auth, config, connector } from '@grafbase/sdk';
+
+const neon = connector.Postgres('Neon', {
+  url: g.env('NEON_URL'),
+});
+
+g.datasource(neon);
 
 const User = g.model('User', {
   name: g.string().length({ min: 2, max: 20 }),
